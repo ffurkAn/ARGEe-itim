@@ -8,3 +8,14 @@ c:\users\efey\documents\visual studio 2010\Projects\Deneme1\Deneme1\obj\x86\Debu
 c:\users\efey\documents\visual studio 2010\Projects\Deneme1\Deneme1\obj\x86\Debug\Deneme1.pdb
 c:\users\efey\documents\visual studio 2010\Projects\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmDeneme.resources
 c:\users\efey\documents\visual studio 2010\Projects\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrEkle.resources
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.exe
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.pdb
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.exe
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.pdb
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmDeneme.resources
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrEkle.resources
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrSil.resources
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.Properties.Resources.resources
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.write.1.tlog

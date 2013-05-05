@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Öğrenci Ekle");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Öğrenci Sil");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Öğrencileri Görüntile");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Öğrenci Ekle");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Öğrenci Sil");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Öğrencileri Görüntile");
             this.gbIslemMenusu = new System.Windows.Forms.GroupBox();
             this.trvIslemler = new System.Windows.Forms.TreeView();
             this.pblAna = new System.Windows.Forms.Panel();
@@ -51,20 +51,23 @@
             // 
             this.trvIslemler.Location = new System.Drawing.Point(6, 19);
             this.trvIslemler.Name = "trvIslemler";
-            treeNode7.Name = "Node0";
-            treeNode7.Text = "Öğrenci Ekle";
-            treeNode7.ToolTipText = "asdasdas";
-            treeNode8.Name = "Node1";
-            treeNode8.Text = "Öğrenci Sil";
-            treeNode9.Name = "Node2";
-            treeNode9.Text = "Öğrencileri Görüntile";
+            treeNode4.Name = "Node0";
+            treeNode4.Tag = "0";
+            treeNode4.Text = "Öğrenci Ekle";
+            treeNode4.ToolTipText = "asdasdas";
+            treeNode5.Name = "Node1";
+            treeNode5.Tag = "1";
+            treeNode5.Text = "Öğrenci Sil";
+            treeNode6.Name = "Node2";
+            treeNode6.Tag = "3";
+            treeNode6.Text = "Öğrencileri Görüntile";
             this.trvIslemler.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8,
-            treeNode9});
+            treeNode4,
+            treeNode5,
+            treeNode6});
             this.trvIslemler.Size = new System.Drawing.Size(143, 74);
             this.trvIslemler.TabIndex = 2;
-            this.trvIslemler.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.trvIslemler_AfterSelect);
+            this.trvIslemler.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.trvIslemler_NodeMouseClick);
             // 
             // pblAna
             // 
@@ -82,6 +85,7 @@
             this.Controls.Add(this.gbIslemMenusu);
             this.Name = "frmDeneme";
             this.Text = "Deneme Formu";
+         
             this.gbIslemMenusu.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -58,6 +58,12 @@
     <Compile Include="frmOgrEkle.Designer.cs">
       <DependentUpon>frmOgrEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOgrSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOgrSil.Designer.cs">
+      <DependentUpon>frmOgrSil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ogrenci.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,6 +72,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOgrEkle.resx">
       <DependentUpon>frmOgrEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOgrSil.resx">
+      <DependentUpon>frmOgrSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

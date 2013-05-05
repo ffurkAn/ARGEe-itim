@@ -11,6 +11,8 @@ namespace Deneme1
 {
     public partial class frmOgrEkle : Form
     {
+        List<Ogrenci> ogrenciler = new List<Ogrenci>();
+
         public frmOgrEkle()
         {
             InitializeComponent();
@@ -49,10 +51,11 @@ namespace Deneme1
 
         private void btnOgrEkle_Click(object sender, EventArgs e)
         {
+            
             Ogrenci yeniOgrenci = new Ogrenci();
             yeniOgrenci.OgrAdi = tbOgrAdi.Text.ToString();
             yeniOgrenci.OgrSoyadi = tbOgrSoyadi.Text.ToString();
-            yeniOgrenci.OgrNo = Convert.ToInt32(tbOgrNo.Text);
+            yeniOgrenci.OgrNo = tbOgrNo.Text.ToString();
             yeniOgrenci.OgrHarfNotu = cmbHarfNotu.SelectedItem.ToString();
 
             if (cbSinifTekrar.Checked)
@@ -69,16 +72,43 @@ namespace Deneme1
             {
                 yeniOgrenci.OgrCinsiyet = "Erkek";
             }
+
+            yeniOgrenci.ogrEkle(yeniOgrenci);
+
+            MessageBox.Show("Başarıyla Eklendi !", "!!!", MessageBoxButtons.OK);
+
+            foreach (Control c in Controls)
+            {
+                ResetControl(c);
+            }
+            
+        }
+
+        private void ResetControl(Control control)
+        {
+            if (control.HasChildren)
+                foreach (var ctl in control.Controls)
+                    ResetControl((Control)ctl);
+
+            if (control is TextBox)
+                control.ResetText();
+
+            if (control is ComboBox)
+                control.ResetText();
+
+            if (control is CheckBox)
+                ((CheckBox)control).Checked = false;
+
+            if (control is RadioButton)
+                ((RadioButton)control).Checked = false;
+            
+           
         }
 
         private void cmbHarfNotu_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
         }
-
-
-      
-
       
     }
 }

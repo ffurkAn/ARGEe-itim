@@ -7,6 +7,7 @@ namespace Deneme1
 {
     class Ogrenci
     {
+        private List<Ogrenci> ogrenciler = new List<Ogrenci>();
         private String ogrAdi, ogrSoyadi, ogrCinsiyet, ogrHarfNotu;
 
         public String OgrHarfNotu
@@ -16,7 +17,7 @@ namespace Deneme1
         }
 
       
-        private Int32 ogrNo;
+        private String ogrNo;
         private bool sinifTekrari = false;
 
         public bool SinifTekrari
@@ -37,8 +38,8 @@ namespace Deneme1
             get { return ogrAdi; }
             set { ogrAdi = value; }
         }
-        
-        public Int32 OgrNo
+
+        public String OgrNo
         {
             get { return ogrNo; }
             set { ogrNo = value; }
@@ -50,6 +51,17 @@ namespace Deneme1
         {
             get { return ogrCinsiyet; }
             set { ogrCinsiyet = value; }
+        }
+
+        public void ogrEkle(Ogrenci o)
+        {
+            ogrenciler.Add(o);
+
+        }
+
+        public List<Ogrenci> tumOgrenciler()
+        {
+            return ogrenciler;
         }
     }
 }

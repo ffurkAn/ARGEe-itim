@@ -16,32 +16,51 @@ namespace Deneme1
             InitializeComponent();
         }
 
-        private void trvIslemler_AfterSelect(object sender, TreeViewEventArgs e)
+       
+        private void trvIslemler_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
 
-              //TreeNode newNode = new TreeNode("Windows");
-              //trvIslemler.Nodes.Add(treeNode);
+            Ogrenci yeni = new Ogrenci();
 
-            switch (trvIslemler.SelectedNode.Index)
+
+            switch (trvIslemler.SelectedNode.Name)
             {
-                case 0 :
-                    frmOgrEkle f = new frmOgrEkle();
-                     f.TopLevel = false;
-                     f.Dock = DockStyle.Fill;    
-                     f.Show();                   
-                     pblAna.Controls.Add(f);
+                case "Node0" :
 
+                    //frmOgrEkle f = new frmOgrEkle();
+                    //f.TopLevel = false;
+                    //f.Dock = DockStyle.Fill;
+                    //f.Show();
+                    //pblAna.Controls.Add(f);
+
+                    frmOgrSil fSil = new frmOgrSil();
+                    fSil.TopLevel = false;
+                    fSil.Dock = DockStyle.Fill;
+                    fSil.Show();
+                    pblAna.Controls.Add(fSil);
+                    
+                    
                     break;
 
-                case 1 :
+                case "Node1":
+
+                    //frmOgrSil fSil = new frmOgrSil();
+                    //fSil.TopLevel = false;
+                    //fSil.Dock = DockStyle.Fill;
+                    //fSil.Show();
+                    //pblAna.Controls.Add(fSil);
                     break;
 
-                case 2 :
+                case "Node2":
                     break;
 
 
 
             }
         }
+
+       
+        
+
     }
 }
