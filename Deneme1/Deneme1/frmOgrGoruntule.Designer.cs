@@ -62,8 +62,10 @@
             this.clmTekrar});
             this.gvGoruntule.Location = new System.Drawing.Point(6, 19);
             this.gvGoruntule.Name = "gvGoruntule";
+            this.gvGoruntule.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvGoruntule.Size = new System.Drawing.Size(394, 191);
             this.gvGoruntule.TabIndex = 0;
+            this.gvGoruntule.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gvGoruntule_MouseClick);
             // 
             // clmNo
             // 
