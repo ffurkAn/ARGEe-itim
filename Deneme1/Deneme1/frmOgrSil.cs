@@ -18,44 +18,29 @@ namespace Deneme1
 
         private void frmOgrSil_Load(object sender, EventArgs e)
         {
-           
             lvOgrSil.CheckBoxes = true;
-            
-            //Ogrenci ogr = new Ogrenci();
-            //List<Ogrenci> ogrenciler = new List<Ogrenci>();
-
-
-            //ogrenciler = ogr.tumOgrenciler();
-
-            //foreach (Ogrenci o in ogrenciler)
-            //{
-            //    ListViewItem item = new ListViewItem(ogr.OgrNo);
-            //    item.SubItems.Add(ogr.OgrAdi);
-            //    item.SubItems.Add(ogr.OgrSoyadi);
-            //    item.SubItems.Add(ogr.OgrHarfNotu);
-            //    item.SubItems.Add(ogr.OgrCinsiyet);
-            //    if(ogr.SinifTekrari == true)
-            //        item.SubItems.Add("Evet");
-            //    else
-            //        item.SubItems.Add("Hayır");
-               
-
-            //    lvOgrSil.Items.Add(item);
-            //}
-
-            ListViewItem item = new ListViewItem("051654");
-            item.SubItems.Add("furkan");
-            item.SubItems.Add("asfdsafd");
-            item.SubItems.Add("AA");
-            item.SubItems.Add("erkek");
-            item.SubItems.Add("Hayır");
-
-
-            lvOgrSil.Items.Add(item);
-            
         }
 
-      
+        private void lnkSil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            foreach ( ListViewItem lvit in lvOgrSil.Items)
+            {
+                lvit.Checked = true;
+            }
+        }
+
+        private void brnSil_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem item in lvOgrSil.CheckedItems)
+            {
+                foreach (Ogrenci ogr in Program.ogrenciler)
+                {
+                    if (ogr.OgrAdi == item.Text)
+                        Program.ogrenciler.Remove(ogr);
+                }
+            }
+        }
+
       
 
     }

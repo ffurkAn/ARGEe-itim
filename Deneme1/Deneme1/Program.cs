@@ -7,6 +7,7 @@ namespace Deneme1
 {
     static class Program
     {
+        public static List<Ogrenci> ogrenciler = new List<Ogrenci>();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,6 +17,7 @@ namespace Deneme1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmDeneme());
+            
         }
     }
 }

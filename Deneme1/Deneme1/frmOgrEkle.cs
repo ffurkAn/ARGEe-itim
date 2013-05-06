@@ -11,7 +11,7 @@ namespace Deneme1
 {
     public partial class frmOgrEkle : Form
     {
-        List<Ogrenci> ogrenciler = new List<Ogrenci>();
+        
 
         public frmOgrEkle()
         {
@@ -75,7 +75,7 @@ namespace Deneme1
 
             yeniOgrenci.ogrEkle(yeniOgrenci);
 
-            MessageBox.Show("Başarıyla Eklendi !", "!!!", MessageBoxButtons.OK);
+            MessageBox.Show("Başarıyla Eklendi !", "!!!11!111", MessageBoxButtons.OK);
 
             foreach (Control c in Controls)
             {

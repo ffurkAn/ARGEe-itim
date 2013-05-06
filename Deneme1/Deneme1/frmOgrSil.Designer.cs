@@ -110,6 +110,7 @@
             this.brnSil.TabIndex = 1;
             this.brnSil.Text = "Sil";
             this.brnSil.UseVisualStyleBackColor = true;
+            this.brnSil.Click += new System.EventHandler(this.brnSil_Click);
             // 
             // lnkSil
             // 
