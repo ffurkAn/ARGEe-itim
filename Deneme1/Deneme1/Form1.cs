@@ -16,51 +16,92 @@ namespace Deneme1
             InitializeComponent();
         }
 
-       
-        private void trvIslemler_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        private void trvIslemler_AfterSelect(object sender, TreeViewEventArgs e)
         {
-
             Ogrenci yeni = new Ogrenci();
 
-
-            switch (trvIslemler.SelectedNode.Name)
-            {
-                case "Node0" :
-
-                    //frmOgrEkle f = new frmOgrEkle();
-                    //f.TopLevel = false;
-                    //f.Dock = DockStyle.Fill;
-                    //f.Show();
-                    //pblAna.Controls.Add(f);
-
-                    frmOgrSil fSil = new frmOgrSil();
-                    fSil.TopLevel = false;
-                    fSil.Dock = DockStyle.Fill;
-                    fSil.Show();
-                    pblAna.Controls.Add(fSil);
-                    
-                    
-                    break;
-
-                case "Node1":
-
-                    //frmOgrSil fSil = new frmOgrSil();
-                    //fSil.TopLevel = false;
-                    //fSil.Dock = DockStyle.Fill;
-                    //fSil.Show();
-                    //pblAna.Controls.Add(fSil);
-                    break;
-
-                case "Node2":
-                    break;
+                pblAna.Controls.Clear();
+                switch (trvIslemler.SelectedNode.Name)
+                {
+                    case "Node0" :
 
 
+                        frmOgrEkle f = new frmOgrEkle();
+                        f.TopLevel = false;
+                        f.Dock = DockStyle.Fill;
+                        f.Show();
+                        pblAna.Controls.Add(f);
 
+                        //frmOgrSil fSil = new frmOgrSil();
+                        //fSil.TopLevel = false;
+                        //fSil.Dock = DockStyle.Fill;
+                        //fSil.Show();
+                        //pblAna.Controls.Add(fSil);
+                        break;
+
+                    case "Node1":
+                        //pblAna.Controls.Clear();
+                        frmOgrSil fSil = new frmOgrSil();
+                        fSil.TopLevel = false;
+                        fSil.Dock = DockStyle.Fill;
+                        fSil.Show();
+                        pblAna.Controls.Add(fSil);
+                        break;
+
+                    case "Node2":
+                        break;
+
+
+
+                }
+                pblAna.Refresh();
             }
         }
+
+       
+        //private void trvIslemler_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        //{
+
+        //    Ogrenci yeni = new Ogrenci();
+
+        //    pblAna.Controls.Clear();
+        //    switch (trvIslemler.SelectedNode.Name)
+        //    {
+        //        case "Node0" :
+
+                   
+        //            frmOgrEkle f = new frmOgrEkle();
+        //            f.TopLevel = false;
+        //            f.Dock = DockStyle.Fill;
+        //            f.Show();
+        //            pblAna.Controls.Add(f);
+
+        //            //frmOgrSil fSil = new frmOgrSil();
+        //            //fSil.TopLevel = false;
+        //            //fSil.Dock = DockStyle.Fill;
+        //            //fSil.Show();
+        //            //pblAna.Controls.Add(fSil);
+        //            break;
+
+        //        case "Node1":
+        //            //pblAna.Controls.Clear();
+        //            frmOgrSil fSil = new frmOgrSil();
+        //            fSil.TopLevel = false;
+        //            fSil.Dock = DockStyle.Fill;
+        //            fSil.Show();
+        //            pblAna.Controls.Add(fSil);
+        //            break;
+
+        //        case "Node2":
+        //            break;
+
+
+
+        //    }
+        //    pblAna.Refresh();
+        //}
 
        
         
 
     }
-}

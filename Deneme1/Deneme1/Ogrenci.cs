@@ -55,13 +55,10 @@ namespace Deneme1
 
         public void ogrEkle(Ogrenci o)
         {
-            ogrenciler.Add(o);
+            Program.ogrenciler.Add(o);
 
         }
 
-        public List<Ogrenci> tumOgrenciler()
-        {
-            return ogrenciler;
-        }
+
     }
 }

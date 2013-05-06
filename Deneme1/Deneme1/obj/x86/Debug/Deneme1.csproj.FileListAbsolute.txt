@@ -19,3 +19,14 @@ D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Dene
 D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.Properties.Resources.resources
 D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.exe
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.pdb
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.exe
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.pdb
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmDeneme.resources
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrEkle.resources
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrSil.resources
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.Properties.Resources.resources
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -30,13 +30,13 @@
         {
             this.gbOgrSil = new System.Windows.Forms.GroupBox();
             this.lvOgrSil = new System.Windows.Forms.ListView();
+            this.clm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOgrNo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOgrAdi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOgrSoyadi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOgrHarf = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOgrCinsiyet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOgrTekrar = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.brnSil = new System.Windows.Forms.Button();
             this.lnkSil = new System.Windows.Forms.LinkLabel();
             this.gbOgrSil.SuspendLayout();
@@ -69,6 +69,11 @@
             this.lvOgrSil.UseCompatibleStateImageBehavior = false;
             this.lvOgrSil.View = System.Windows.Forms.View.Details;
             // 
+            // clm
+            // 
+            this.clm.Text = "";
+            this.clm.Width = 20;
+            // 
             // clmOgrNo
             // 
             this.clmOgrNo.Text = "Öğr. No";
@@ -96,11 +101,6 @@
             this.clmOgrTekrar.Text = "Sınıf Tekrarı ?";
             this.clmOgrTekrar.Width = 80;
             // 
-            // clm
-            // 
-            this.clm.Text = "";
-            this.clm.Width = 20;
-            // 
             // brnSil
             // 
             this.brnSil.Location = new System.Drawing.Point(343, 205);
@@ -109,6 +109,7 @@
             this.brnSil.TabIndex = 1;
             this.brnSil.Text = "Sil";
             this.brnSil.UseVisualStyleBackColor = true;
+            this.brnSil.Click += new System.EventHandler(this.brnSil_Click);
             // 
             // lnkSil
             // 
@@ -119,6 +120,7 @@
             this.lnkSil.TabIndex = 2;
             this.lnkSil.TabStop = true;
             this.lnkSil.Text = "Tümünü Seç";
+            this.lnkSil.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkSil_LinkClicked);
             // 
             // frmOgrSil
             // 
