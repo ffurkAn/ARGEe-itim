@@ -30,3 +30,15 @@ C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.fr
 C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.Properties.Resources.resources
 C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmDeneme.resources
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrEkle.resources
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrGoruntule.resources
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrSil.resources
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.Properties.Resources.resources
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.exe
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.exe
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.pdb
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.pdb

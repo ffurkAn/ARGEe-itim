@@ -51,7 +51,7 @@
             this.gbOgrSil.TabIndex = 0;
             this.gbOgrSil.TabStop = false;
             this.gbOgrSil.Text = "Silme";
-            this.gbOgrSil.Enter += new System.EventHandler(this.gbOgrSil_Enter);
+           
             // 
             // lvOgrSil
             // 

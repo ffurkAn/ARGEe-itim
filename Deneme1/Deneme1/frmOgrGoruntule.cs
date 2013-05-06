@@ -17,15 +17,16 @@ namespace Deneme1
         }
 
         private void frmOgrGoruntule_Load(object sender, EventArgs e)
-        {
-            Ogrenci y = new Ogrenci();
+        {           
+            gvGoruntule.DataSource = Program.ogrenciler;
+            gvGoruntule.Refresh();
 
-            //List<Ogrenci> c = y.tumOgrenciler();
-            //BindingListView<Customer> view = new BindingListView<Customer>(customers);
-            gvGoruntule.DataSource = y.tumOgrenciler();
-
-
-           gvGoruntule.Refresh();
+            gvGoruntule.Columns["ogrAdi"].DisplayIndex = 0;
+            gvGoruntule.Columns["ogrSoyadi"].DisplayIndex = 1;
+            gvGoruntule.Columns["ogrNo"].DisplayIndex = 2;
+            gvGoruntule.Columns["ogrHarfNotu"].DisplayIndex = 3;
+            gvGoruntule.Columns["ogrCinsiyet"].DisplayIndex = 4;
+            gvGoruntule.Columns["sinifTekrari"].DisplayIndex = 5;
         }
 
         private void gvGoruntule_MouseClick(object sender, MouseEventArgs e)
@@ -34,11 +35,11 @@ namespace Deneme1
               String tekrar;
 
             Ogrenci o = new Ogrenci();
-            o.OgrAdi = gvGoruntule.SelectedRows[0].Cells[0].ToString();
-            o.OgrSoyadi = gvGoruntule.SelectedRows[0].Cells[1].ToString();
-            o.OgrNo = gvGoruntule.SelectedRows[0].Cells[2].ToString();
-            o.OgrHarfNotu = gvGoruntule.SelectedRows[0].Cells[3].ToString();
-            o.OgrCinsiyet = gvGoruntule.SelectedRows[0].Cells[4].ToString();
+            o.OgrAdi = gvGoruntule.SelectedRows[0].Cells[0].Value.ToString();
+            o.OgrSoyadi = gvGoruntule.SelectedRows[0].Cells[1].Value.ToString();
+            o.OgrNo = gvGoruntule.SelectedRows[0].Cells[2].Value.ToString();
+            o.OgrHarfNotu = gvGoruntule.SelectedRows[0].Cells[3].Value.ToString();
+            o.OgrCinsiyet = gvGoruntule.SelectedRows[0].Cells[4].Value.ToString();
 
             if (gvGoruntule.SelectedRows[0].Cells[5].ToString() == "Evet")
                 tekrar = "evet";
@@ -46,13 +47,27 @@ namespace Deneme1
                 tekrar = "hayır";
 
 
-            sonuc = MessageBox.Show(o.OgrAdi + " " + o.OgrSoyadi + "\n" + o.OgrNo + "\n" + o.OgrHarfNotu + "\n" + o.OgrCinsiyet + "\n"+tekrar, "Öğrenci Bilgisi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmOgrEkle fg = new frmOgrEkle(o);
+            
+            sonuc = fg.ShowDialog();
+
+            if (sonuc == DialogResult.Yes)
+            {
+                
+            }
+           
+
+                
+                
+                //MessageBox.Show(o.OgrAdi.ToString() + " " 
+                //+ o.OgrSoyadi.ToString() + "\n" + o.OgrNo.ToString() 
+                //+ "\n" + o.OgrHarfNotu.ToString() + "\n" + o.OgrCinsiyet.ToString() 
+                //+ "\n" + tekrar, "Öğrenci Bilgisi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
             if (sonuc == DialogResult.Yes)
             {
                 Application.Exit();
             }
-
             
         }
 

@@ -65,6 +65,7 @@
             // 
             // btnOgrEkle
             // 
+            this.btnOgrEkle.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.btnOgrEkle.Location = new System.Drawing.Point(313, 180);
             this.btnOgrEkle.Name = "btnOgrEkle";
             this.btnOgrEkle.Size = new System.Drawing.Size(75, 23);
@@ -210,6 +211,7 @@
             // 
             // frmOgrEkle
             // 
+            this.AcceptButton = this.btnOgrEkle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;

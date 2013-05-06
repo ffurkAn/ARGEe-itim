@@ -30,12 +30,6 @@
         {
             this.gbOgrGoruntule = new System.Windows.Forms.GroupBox();
             this.gvGoruntule = new System.Windows.Forms.DataGridView();
-            this.clmNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmSoyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmHarf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmCinsiyet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmTekrar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbOgrGoruntule.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvGoruntule)).BeginInit();
             this.SuspendLayout();
@@ -53,54 +47,12 @@
             // gvGoruntule
             // 
             this.gvGoruntule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvGoruntule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clmNo,
-            this.clmAd,
-            this.clmSoyad,
-            this.clmHarf,
-            this.clmCinsiyet,
-            this.clmTekrar});
             this.gvGoruntule.Location = new System.Drawing.Point(6, 19);
             this.gvGoruntule.Name = "gvGoruntule";
             this.gvGoruntule.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvGoruntule.Size = new System.Drawing.Size(394, 191);
             this.gvGoruntule.TabIndex = 0;
             this.gvGoruntule.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gvGoruntule_MouseClick);
-            // 
-            // clmNo
-            // 
-            this.clmNo.HeaderText = "Öğr. No";
-            this.clmNo.Name = "clmNo";
-            this.clmNo.ReadOnly = true;
-            // 
-            // clmAd
-            // 
-            this.clmAd.HeaderText = "Öğr. Adi";
-            this.clmAd.Name = "clmAd";
-            this.clmAd.ReadOnly = true;
-            // 
-            // clmSoyad
-            // 
-            this.clmSoyad.HeaderText = "Öğr. Soyadı";
-            this.clmSoyad.Name = "clmSoyad";
-            // 
-            // clmHarf
-            // 
-            this.clmHarf.HeaderText = "Öğr. Harf Notu";
-            this.clmHarf.Name = "clmHarf";
-            this.clmHarf.ReadOnly = true;
-            // 
-            // clmCinsiyet
-            // 
-            this.clmCinsiyet.HeaderText = "Öğr. Cinsiyet";
-            this.clmCinsiyet.Name = "clmCinsiyet";
-            this.clmCinsiyet.ReadOnly = true;
-            // 
-            // clmTekrar
-            // 
-            this.clmTekrar.HeaderText = "Sınıf Tekrarı";
-            this.clmTekrar.Name = "clmTekrar";
-            this.clmTekrar.ReadOnly = true;
             // 
             // frmOgrGoruntule
             // 
@@ -124,11 +76,5 @@
 
         private System.Windows.Forms.GroupBox gbOgrGoruntule;
         private System.Windows.Forms.DataGridView gvGoruntule;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmAd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmSoyad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmHarf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmCinsiyet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmTekrar;
     }
 }

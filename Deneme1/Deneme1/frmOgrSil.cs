@@ -19,6 +19,23 @@ namespace Deneme1
         private void frmOgrSil_Load(object sender, EventArgs e)
         {
             lvOgrSil.CheckBoxes = true;
+
+
+            foreach (Ogrenci o in Program.ogrenciler)
+            {
+                ListViewItem item = new ListViewItem(o.OgrNo);
+                item.SubItems.Add(o.OgrAdi);
+                item.SubItems.Add(o.OgrSoyadi);
+                item.SubItems.Add(o.OgrHarfNotu);
+                item.SubItems.Add(o.OgrCinsiyet);
+                if (o.SinifTekrari == true)
+                    item.SubItems.Add("Evet");
+                else
+                    item.SubItems.Add("Hayır");
+
+
+                lvOgrSil.Items.Add(item);
+            }
         }
 
         private void lnkSil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -31,14 +48,30 @@ namespace Deneme1
 
         private void brnSil_Click(object sender, EventArgs e)
         {
+            List<Ogrenci> silinecekler = new List<Ogrenci>();
+
             foreach (ListViewItem item in lvOgrSil.CheckedItems)
             {
+                
                 foreach (Ogrenci ogr in Program.ogrenciler)
                 {
-                    if (ogr.OgrAdi == item.Text)
-                        Program.ogrenciler.Remove(ogr);
+                    if (ogr.OgrNo == item.Text.ToString())
+                    {
+                       silinecekler.Add(ogr);                      
+                    }
                 }
             }
+
+           
+             
+                foreach (Ogrenci del in silinecekler)
+                {
+                    Program.ogrenciler.Remove(del);
+                }
+
+            if (silinecekler.Count!=0)
+                MessageBox.Show("sildim panpacım", "Altını şer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            silinecekler.Clear();
         }
 
       

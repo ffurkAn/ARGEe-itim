@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Deneme1
 {
-    class Ogrenci
+  public  class Ogrenci
     {
         private List<Ogrenci> ogrenciler = new List<Ogrenci>();
         private String ogrAdi, ogrSoyadi, ogrCinsiyet, ogrHarfNotu;

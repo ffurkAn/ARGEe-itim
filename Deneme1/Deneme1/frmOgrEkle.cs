@@ -11,11 +11,25 @@ namespace Deneme1
 {
     public partial class frmOgrEkle : Form
     {
-        
+        private Ogrenci o;  
 
         public frmOgrEkle()
         {
             InitializeComponent();
+        }
+
+        public frmOgrEkle(Ogrenci o)
+        {
+            // TODO: Complete member initialization
+            InitializeComponent();
+            this.o = o;
+            btnOgrEkle.Text = "Kapat";
+
+            //bos alanların doldurulması
+
+            btnOgrEkle.Click -= new EventHandler(btnOgrEkle_Click);
+            btnOgrEkle.Click += new EventHandler(formKapat);
+
         }
 
         private void tbOgrAdi_KeyPress(object sender, KeyPressEventArgs e)
@@ -108,6 +122,11 @@ namespace Deneme1
         private void cmbHarfNotu_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void formKapat(object sender, EventArgs e)
+        { 
+        
         }
       
     }
