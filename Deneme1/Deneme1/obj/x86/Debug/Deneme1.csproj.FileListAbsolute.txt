@@ -19,3 +19,5 @@ D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Dene
 D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.Properties.Resources.resources
 D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\ \C.E\C#\c# projelerim\argefar\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.exe
+C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.pdb

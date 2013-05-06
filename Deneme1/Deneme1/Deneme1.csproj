@@ -58,6 +58,12 @@
     <Compile Include="frmOgrEkle.Designer.cs">
       <DependentUpon>frmOgrEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOgrGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOgrGoruntule.Designer.cs">
+      <DependentUpon>frmOgrGoruntule.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOgrSil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOgrEkle.resx">
       <DependentUpon>frmOgrEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOgrGoruntule.resx">
+      <DependentUpon>frmOgrGoruntule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOgrSil.resx">
       <DependentUpon>frmOgrSil.cs</DependentUpon>

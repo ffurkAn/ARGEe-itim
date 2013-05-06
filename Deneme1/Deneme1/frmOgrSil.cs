@@ -18,7 +18,7 @@ namespace Deneme1
 
         private void frmOgrSil_Load(object sender, EventArgs e)
         {
-
+           
             lvOgrSil.CheckBoxes = true;
             
             //Ogrenci ogr = new Ogrenci();
@@ -55,6 +55,7 @@ namespace Deneme1
             
         }
 
+      
       
 
     }
