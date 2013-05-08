@@ -24,8 +24,28 @@ namespace Deneme1
             InitializeComponent();
             this.o = o;
             btnOgrEkle.Text = "Kapat";
+            groupBox1.Text = "Görüntüleme";
 
-            //bos alanların doldurulması
+            tbOgrAdi.Text = o.OgrAdi;
+            tbOgrSoyadi.Text = o.OgrSoyadi;
+            tbOgrNo.Text = o.OgrNo;
+            cmbHarfNotu.Text = o.OgrHarfNotu;
+
+            if (o.SinifTekrari)
+                cbSinifTekrar.Checked = true;
+
+            switch (o.OgrCinsiyet)
+            {
+                case "Erkek":
+                    rbErkek.Checked = true;
+                    break;
+                
+                case  "Kız" :
+                    rbKız.Checked = true;
+                    break;
+
+            }
+
 
             btnOgrEkle.Click -= new EventHandler(btnOgrEkle_Click);
             btnOgrEkle.Click += new EventHandler(formKapat);
