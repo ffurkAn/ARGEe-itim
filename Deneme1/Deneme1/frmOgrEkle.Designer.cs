@@ -76,6 +76,7 @@
             // 
             // cmbHarfNotu
             // 
+            this.cmbHarfNotu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbHarfNotu.FormattingEnabled = true;
             this.cmbHarfNotu.Items.AddRange(new object[] {
             "AA",

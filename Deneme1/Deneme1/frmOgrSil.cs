@@ -18,12 +18,20 @@ namespace Deneme1
 
         private void frmOgrSil_Load(object sender, EventArgs e)
         {
+            lvOgrSil_Refresh();
+        }
+
+        private void lvOgrSil_Refresh()
+        {
+            
+
             lvOgrSil.CheckBoxes = true;
 
 
             foreach (Ogrenci o in Program.ogrenciler)
             {
                 ListViewItem item = new ListViewItem(o.OgrNo);
+                item.SubItems.Add(o.OgrNo);
                 item.SubItems.Add(o.OgrAdi);
                 item.SubItems.Add(o.OgrSoyadi);
                 item.SubItems.Add(o.OgrHarfNotu);
@@ -57,7 +65,8 @@ namespace Deneme1
                 {
                     if (ogr.OgrNo == item.Text.ToString())
                     {
-                       silinecekler.Add(ogr);                      
+                       silinecekler.Add(ogr);
+                       lvOgrSil.Items.Remove(item); 
                     }
                 }
             }
@@ -67,12 +76,17 @@ namespace Deneme1
                 foreach (Ogrenci del in silinecekler)
                 {
                     Program.ogrenciler.Remove(del);
+                    
                 }
 
+
             if (silinecekler.Count!=0)
-                MessageBox.Show("sildim panpacım", "Altını şer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Öğrenci kaydı silinmiştir.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             silinecekler.Clear();
+
+           
         }
+
 
       
 

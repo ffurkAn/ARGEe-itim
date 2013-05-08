@@ -25,6 +25,8 @@ namespace Deneme1
             this.o = o;
             btnOgrEkle.Text = "Kapat";
             groupBox1.Text = "Görüntüleme";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+
 
             tbOgrAdi.Text = o.OgrAdi;
             tbOgrSoyadi.Text = o.OgrSoyadi;
@@ -107,9 +109,10 @@ namespace Deneme1
                 yeniOgrenci.OgrCinsiyet = "Erkek";
             }
 
+
             yeniOgrenci.ogrEkle(yeniOgrenci);
 
-            MessageBox.Show("Başarıyla Eklendi !", "!!!11!111", MessageBoxButtons.OK);
+            MessageBox.Show("Öğrenci kaydı eklenmiştir.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             foreach (Control c in Controls)
             {

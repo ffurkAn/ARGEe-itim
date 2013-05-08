@@ -32,19 +32,25 @@ namespace Deneme1
         private void gvGoruntule_MouseClick(object sender, MouseEventArgs e)
         {
             DialogResult sonuc;
-              String tekrar;
+             
 
             Ogrenci o = new Ogrenci();
-            o.OgrAdi = gvGoruntule.SelectedRows[0].Cells[0].Value.ToString();
-            o.OgrSoyadi = gvGoruntule.SelectedRows[0].Cells[1].Value.ToString();
-            o.OgrNo = gvGoruntule.SelectedRows[0].Cells[2].Value.ToString();
-            o.OgrHarfNotu = gvGoruntule.SelectedRows[0].Cells[3].Value.ToString();
-            o.OgrCinsiyet = gvGoruntule.SelectedRows[0].Cells[4].Value.ToString();
+            o.OgrAdi = gvGoruntule.SelectedRows[0].Cells[3].Value.ToString();
+            o.OgrSoyadi = gvGoruntule.SelectedRows[0].Cells[2].Value.ToString();
+            o.OgrNo = gvGoruntule.SelectedRows[0].Cells[4].Value.ToString();
+            o.OgrHarfNotu = gvGoruntule.SelectedRows[0].Cells[0].Value.ToString();
+            o.OgrCinsiyet = gvGoruntule.SelectedRows[0].Cells[5].Value.ToString();
 
-            if (gvGoruntule.SelectedRows[0].Cells[5].ToString() == "Evet")
-                tekrar = "evet";
+            DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)gvGoruntule.SelectedRows[0].Cells[1];
+
+            if (chk.Value == chk.TrueValue)
+            {
+                o.SinifTekrari = true;
+            }
             else
-                tekrar = "hayır";
+            {
+                o.SinifTekrari = false;
+            }
 
 
             frmOgrEkle fg = new frmOgrEkle(o);
@@ -53,23 +59,10 @@ namespace Deneme1
 
             if (sonuc == DialogResult.Yes)
             {
-                
+                fg.Close();
             }
-           
-
-                
-                
-                //MessageBox.Show(o.OgrAdi.ToString() + " " 
-                //+ o.OgrSoyadi.ToString() + "\n" + o.OgrNo.ToString() 
-                //+ "\n" + o.OgrHarfNotu.ToString() + "\n" + o.OgrCinsiyet.ToString() 
-                //+ "\n" + tekrar, "Öğrenci Bilgisi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
-            if (sonuc == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            
-        }
+                                                          
+       }
 
         
     }

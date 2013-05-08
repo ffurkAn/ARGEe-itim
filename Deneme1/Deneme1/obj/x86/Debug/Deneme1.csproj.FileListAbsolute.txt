@@ -42,3 +42,4 @@ C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.exe
 C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.exe
 C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\bin\Debug\Deneme1.pdb
 C:\Users\furkant\Desktop\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.pdb
+C:\Users\efey\Desktop\egitim\ARGEegitim\Deneme1\Deneme1\obj\x86\Debug\Deneme1.frmOgrGoruntule.resources
